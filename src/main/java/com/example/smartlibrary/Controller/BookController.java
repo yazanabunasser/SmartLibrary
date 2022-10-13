@@ -3,6 +3,7 @@ package com.example.smartlibrary.Controller;
 import com.example.smartlibrary.Service.BookService;
 import com.example.smartlibrary.dto.Request.BookRequest;
 import com.example.smartlibrary.dto.model.BookDTO;
+import javassist.bytecode.DuplicateMemberException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,7 +30,7 @@ public class BookController {
     }
 
     @PostMapping
-    public void addBook(@RequestBody BookRequest bookRequest) {
+    public void addBook(@RequestBody BookRequest bookRequest){
         bookService.addBook(bookRequest);
     }
 
