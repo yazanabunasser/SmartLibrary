@@ -7,6 +7,7 @@ import com.example.smartlibrary.Repository.ShelfBoyRepository;
 import com.example.smartlibrary.dto.Request.BookRequest;
 import com.example.smartlibrary.dto.mapper.ObjectMapperUtils;
 import com.example.smartlibrary.dto.model.BookDTO;
+import javassist.bytecode.DuplicateMemberException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
